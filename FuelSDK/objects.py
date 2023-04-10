@@ -2,6 +2,16 @@ from FuelSDK.rest import ET_CUDSupport,ET_CUDSupportRest,ET_GetSupport,ET_Get,ET
 
 ########
 ##
+##  wrap an Exact Target Business Unit
+##
+########
+class ET_BusinessUnit(ET_CUDSupport):
+    def __init__(self):
+        super(ET_BusinessUnit, self).__init__()
+        self.obj_type = 'BusinessUnit'
+
+########
+##
 ##  wrap an Exact Target Content Area
 ##
 ########
